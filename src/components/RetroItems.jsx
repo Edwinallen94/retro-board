@@ -39,9 +39,10 @@ export function RetroItems() {
       </button>
 
       {/* <!-- A retro card (retrospective item) --> */}
-      <div className="RetroCard" aria-label="Retro card">
-        {items.map((item, index) => {
-          return (
+
+      {items.map((item, index) => {
+        return (
+          <div className="RetroCard" aria-label="Retro card">
             <div key={`item${newItem}`}>
               {/* <!-- User input --> */}
               <textarea
@@ -84,9 +85,9 @@ export function RetroItems() {
                 </div>
               </div>
             </div>
-          );
-        })}
-      </div>
+          </div>
+        );
+      })}
     </>
   );
 }
